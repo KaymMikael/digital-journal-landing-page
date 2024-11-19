@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind Output CSS -->
+    <link rel="stylesheet" href="./css/output.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="bg-white border border-solid border-b-2 sticky top-0 z-10 p-3"
+    >
+      <section class="max-w-6xl mx-auto flex justify-between items-center">
+        <h2 class="text-3xl text-rose-500 font-bold">
+          <a href="#hero" class="hover:opacity-70">Journal</a>
+        </h2>
+        <button
+          aria-label="Hamburger button"
+          class="block md:hidden text-3xl"
+          id="hamburgerIcon"
+        >
+          &#9776;
+        </button>
+        <nav aria-label="page navigation" class="hidden md:block">
+          <ul class="flex gap-8 list-none">
+            <li class="text-slate-600 font-bold hover:opacity-70">
+              <a href="#about">About</a>
+            </li>
+            <li class="text-slate-600 font-bold hover:opacity-70">
+              <a href="#">Features</a>
+            </li>
+            <li class="text-slate-600 font-bold hover:opacity-70">
+              <a href="#">Docs</a>
+            </li>
+            <li class="text-slate-600 font-bold hover:opacity-70">
+              <a href="#">Pricing</a>
+            </li>
+          </ul>
+        </nav>
+        <nav
+          aria-label="register and login navigation"
+          class="hidden md:flex gap-8 items-center"
+        >
+          <a class="text-rose-500 hover:opacity-70" href="#">Register</a>
+          <a
+            class="text-rose-500 border border-solid border-rose-500 rounded-3xl py-1 px-6 hover:bg-rose-500 hover:text-white"
+            href="#"
+          >
+            Login
+          </a>
+        </nav>
+      </section>
+      <!-- Mobile Navigation -->
+      <nav
+        aria-label="page navigation"
+        class="hidden md:hidden max-w-6xl mx-auto mt-3"
+        id="navLinks"
+      >
+        <ul class="flex gap-4 flex-col list-none">
+          <li class="text-slate-600 font-bold hover:opacity-70">
+            <a href="#about">About</a>
+          </li>
+          <li class="text-slate-600 font-bold hover:opacity-70">
+            <a href="#">Features</a>
+          </li>
+          <li class="text-slate-600 font-bold hover:opacity-70">
+            <a href="#">Docs</a>
+          </li>
+          <li class="text-slate-600 font-bold hover:opacity-70">
+            <a href="#">Pricing</a>
+          </li>
+        </ul>
+      </nav>
+      <nav
+        aria-label="register and login navigation"
+        class="hidden md:hidden max-w-6xl mx-auto gap-4 items-center"
+        id="accountNavigation"
+      >
+        <a class="text-rose-500 hover:opacity-70" href="#">Register</a>
+        <a
+          class="text-rose-500 border border-solid border-rose-500 rounded-3xl py-1 px-6 hover:bg-rose-500 hover:text-white"
+          href="#"
+        >
+          Login
+        </a>
+      </nav>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Main -->
+    <main class="px-3">
+      <!-- Introduction or Hero -->
+      <section
+        class="widescreen:section-min-height tallscreen:section-min-height max-w-6xl mx-auto section-min-height pt-12 scroll-mt-20"
+        id="hero"
+      >
+        <h2 class="text-3xl md:text-5xl mx-auto max-w-xl text-center font-bold">
+          Write your daily journal and read them in exciting way
+        </h2>
+        <p class="mx-auto max-w-md text-center text-lg my-8">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          pariatur debitis quae, iusto dignissimos sapiente? Quos nihil
+          necessitatibus soluta earum.
+        </p>
+        <button
+          class="mx-auto block bg-rose-500 py-3 px-28 mt-3 rounded-full text-white hover:opacity-70"
+        >
+          Get Started
+        </button>
+      </section>
+      <!-- About -->
+      <section
+        id="about"
+        class="widescreen:section-min-height tallscreen:section-min-height max-w-6xl mx-auto section-min-height py-12 scroll-mt-20"
+      >
+        <h2 class="text-3xl md:text-5xl mx-auto max-w-xl text-center font-bold">
+          An app where you'll find a peace of mind
+        </h2>
+        <div class="flex flex-col md:flex-row gap-6 mt-6">
+          <div class="p-4 shadow-lg flex flex-col items-center justify-between">
+            <img
+              src="img/TangledMind.avif"
+              alt="Tangled Mind"
+              class="max-w-32"
+            />
+            <p class="text-3xl text-center font-bold my-3">
+              Clear your tangled mind
+            </p>
+            <p class="text-center text-slate-500">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quisquam, tempore.
+            </p>
+          </div>
+          <div class="p-4 shadow-lg flex flex-col items-center justify-between">
+            <img
+              src="img/WriteThoughts.jpg"
+              alt="Tangled Mind"
+              class="max-w-32"
+            />
+            <p class="text-3xl text-center font-bold my-3">
+              Write down your thoughts
+            </p>
+            <p class="text-center text-slate-500">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quisquam, tempore.
+            </p>
+          </div>
+          <div class="p-4 shadow-lg flex flex-col items-center justify-between">
+            <img
+              src="img/CustomizePaper.jpg"
+              alt="Tangled Mind"
+              class="max-w-32"
+            />
+            <p class="text-3xl text-center font-bold my-3">
+              The choice is yours
+            </p>
+            <p class="text-center text-slate-500">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quisquam, tempore.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-black text-xl px-3">
+      <section
+        class="max-w-6xl mx-auto py-6 flex flex-col md:flex-row gap-6 justify-between"
+      >
+        <div>
+          <h2 class="text-3xl text-rose-500 font-bold">
+            <a href="#hero" class="hover:opacity-80">Journal</a>
+          </h2>
+          <p class="text-slate-300 max-w-48">
+            The ultimate digital journal for creative mind. Everywhere, everyway
+          </p>
+        </div>
+        <div>
+          <ul class="list-none text-slate-300">
+            <li><a href="#about" class="hover:opacity-80">About</a></li>
+            <li><a href="#features" class="hover:opacity-80">Features</a></li>
+            <li><a href="#docs" class="hover:opacity-80">Docs</a></li>
+            <li><a href="#pricing" class="hover:opacity-80">Pricing</a></li>
+          </ul>
+        </div>
+        <p class="text-center text-slate-300" id="creditsElement">
+          © 2024 All rights reserved Journal
+        </p>
+      </section>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
